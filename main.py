@@ -4,7 +4,7 @@ import sys
 import time
 
 # Your bot token and chat ID
-BOT_TOKEN = 'bot_token_here'
+BOT_TOKEN = '7909854177:AAEuFKww3A1W-ksvR4qBSgWIKtX09ibpGMI
 CHAT_ID = 'chat_id_here'
 
 def is_admin():
