@@ -20,7 +20,6 @@ else:
     ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, " ".join([sys.argv[0]] + sys.argv[1:]), None, 1)
     exit()
 
-os.system('pip install pypsexec pycryptodome >nul 2>&1')
 import json
 import binascii
 from pypsexec.client import Client
