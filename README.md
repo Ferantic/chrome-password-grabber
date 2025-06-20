@@ -9,6 +9,8 @@ It sends the chrome passwords using a telegram bot,it is easy to use and is writ
 
 you need to install requirements.txt for it to work, I might make it do that automatically later but who knows.
 
+enter this into your command prompt
+
 ```bash
 pip install pywin32 pycryptodome pypsexec requests
 ```
